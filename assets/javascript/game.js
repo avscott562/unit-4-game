@@ -13,6 +13,9 @@ var compScore = 0;
 //array to capture current value for each crystal
 var values = [];
 
+//capture timeout variable
+var time;
+
 
 //new game function
 function newGame() {
@@ -58,7 +61,7 @@ $('.crystal').on("click", function() {
     $('#userTotal').text(score);
 
     //run game over function
-    gameOver();
+    time = setTimeout(gameOver, 300);
 });
 
 //check to see if game over
@@ -71,7 +74,7 @@ function gameOver() {
         //notfy player game over
         alert("You got it!  You are a genius!");
         //start new game
-        // resetGame();
+        resetGame();
     } else if (score > compScore) {
         //up losses count by 1
         loss++;
@@ -80,7 +83,15 @@ function gameOver() {
         //notify player game over
         alert("Aww, you almost had it.  Try again.");
         //start new game
-        // resetGame()
+        resetGame()
     }
 }
 //reset function
+function resetGame() {
+    score = 0;
+    compScore = 0;
+    values = [];
+    $('#userTotal').text(score);
+    clearInterval(time);
+    newGame();
+}
