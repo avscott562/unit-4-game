@@ -42,6 +42,7 @@ function newGame() {
 
 }
 
+//initiate game on page load
 newGame();
 
 //on click function for each crystal
@@ -55,6 +56,31 @@ $('.crystal').on("click", function() {
 
     //display user score on screen
     $('#userTotal').text(score);
+
+    //run game over function
+    gameOver();
 });
 
+//check to see if game over
+function gameOver() {
+    if (score === compScore) {
+        //up wins count by 1
+        win++;
+        //display wins count on screen
+        $('#wins').text(win);
+        //notfy player game over
+        alert("You got it!  You are a genius!");
+        //start new game
+        // resetGame();
+    } else if (score > compScore) {
+        //up losses count by 1
+        loss++;
+        //display losses count on screen
+        $('#losses').text(loss);
+        //notify player game over
+        alert("Aww, you almost had it.  Try again.");
+        //start new game
+        // resetGame()
+    }
+}
 //reset function
