@@ -5,6 +5,7 @@
     <!-- link bootsrap & style sheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
     <title>Crystals Collector</title>
     <!-- link jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -30,28 +31,30 @@
         </div>
     </div>
 
-    <br><br>
+    <br><br><br><br>
 
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-sm-12"></div>
-                <div id="comp" class="col-md-3 col-sm-12 text-center mr-3">
-                    <div id="random">The random number you need to match is:</div><br>
+                <div id="comp" class="col-md-3 col-sm-12 text-center mr-3 border border-warning">
+                    <h4 id="random">The random number you need to match is:</h4><br>
                     <div id="randomNumber">0</div><br>
                 </div>
                 <div id="player" class="col-md-3 col-sm-12 text-center mr-3">
-                    <div id="score">Your total score is:</div><br><br>
+                    <h4 id="score">Your total score is:</h4><br><br>
                     <div id="userTotal">0</div><br>
                 </div>
                 <div id="stats" class="col-md-3 col-sm-12 mr-2 text-center">
                     <h4>Stats: </h4><br>
                     <div class="row">
                         <div class="col-md-6  col-sm-12">
-                            <div>Wins: &nbsp;&nbsp;<span id="wins">0</span></div>
+                            <h5>Wins:</h5>
+                            <div id="wins">0</div>
                         </div>
                         <div class="col-md-6  col-sm-12">
-                            <div>Losses: &nbsp;&nbsp;<span id="losses">0</span></div>
+                            <h5>Losses:</h5>
+                            <div id="losses">0</div>
                         </div>
                     </div>
                 </div>

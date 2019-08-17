@@ -1,7 +1,7 @@
 body {
     background: url('../images/energy.jpeg');
     background-size: cover;
-    /* color: #f7e8e8; */
+    font-family: 'Courgette', cursive;
     font-weight: bolder;
 }
 
@@ -15,15 +15,23 @@ h1 {
     /* color: black; */
 }
 
+h4 {
+    font-size: 25px;
+}
+
 #comp, #player, #stats {
-    background: #efdecd;
+    background-image: linear-gradient(to bottom right, rgb(52, 174, 214), pink, yellow, rgb(39, 216, 39));
 }
 
 #randomNumber, #userTotal {
-    font-size:  32px;
+    font-size: 40px;
+}
+
+h5, #losses, #wins {
+    font-size: 25px;
 }
 
 .crystal {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
