@@ -1,0 +1,29 @@
+body {
+    background: url('../images/energy.jpeg');
+    background-size: cover;
+    /* color: #f7e8e8; */
+    font-weight: bolder;
+}
+
+h1 {
+    color:  #ff4019;
+    font-size: 50px;
+}
+
+.instructions {
+    /* background: goldenrod; */
+    /* color: black; */
+}
+
+#comp, #player, #stats {
+    background: #efdecd;
+}
+
+#randomNumber, #userTotal {
+    font-size:  32px;
+}
+
+.crystal {
+    width: 350px;
+    height: 350px;
+}
